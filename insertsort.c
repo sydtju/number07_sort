@@ -12,5 +12,4 @@ void insertsort(int dat[],int length){
 		}	
 		dat[j]=temp;
 	}
-	display(dat,10);
 }
