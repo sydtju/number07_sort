@@ -34,3 +34,18 @@ int bubble_sort_upgrade(element *data,int length){
 }
 /*冒泡排序*/
 /*相邻元素两两比较*/
+//20150707
+void bobbleSort(vector<int> &dat){
+	int length=dat.size();
+	int flag=1;//使用flag对于基本有序数组 可以很好的减少复杂度
+	if (dat.size()==1) return ;
+	for (int i=0;i<length&&flag;++i)//一旦条件不满足就结束了循环
+	{
+		flag=0;
+		for (int j=0;j<length-1-i;++j)
+		{
+			counter++;
+			if (dat[j]>dat[j+1]) {swap(dat[j],dat[j+1]);flag=1;}
+		}
+	}
+}
