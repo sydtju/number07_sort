@@ -13,11 +13,8 @@ void adjustheap1(int *dat,int root_temp,int length){
 			int max=0;
 		if(i<length){//这里是保证i+1是有效的
 			//找出左右孩子中的最大值
-			if(dat[i]>dat[i+1]){
-				max=i;
-			}
-			else
-				max=i+1;
+			if(dat[i]>dat[i+1])  max=i;
+			else	max=i+1;
 			//将最大值与父节点进行比较
 			if(dat[i/2]<dat[max]){
 				swap2(dat,i/2,max);
