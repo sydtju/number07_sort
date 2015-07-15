@@ -5,7 +5,7 @@ int partition_sort(vector<int> &dat,int start,int end){//
 	int right=end;
 	while (start<end)
 	{
-		while (start<end&&dat[end]>=std)--end;
+		while (start<end&&dat[end]>std)--end;//这里应该是>号
 		dat[start]=dat[end];
 		while (start<end&&dat[start]<=std)++start;
 		dat[end]=dat[start];
