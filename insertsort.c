@@ -28,7 +28,7 @@ public:
 		for (int i=1;i<length;++i){
 			j=i;
 			temp=data[i];
-			while (data[j-1]>temp&&j>0){	
+			while (j>0&&data[j-1]>temp){	//j>0在前
 				data[j]=data[j-1];
 				j--;
 			}
